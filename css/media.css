@@ -1,0 +1,121 @@
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .logo {
+    text-align: right;
+  }
+  nav {
+    position: fixed;
+    padding-top: 65px;
+    z-index: 99999;
+    width: 190px;
+    left: -200px;
+    background-color: #000;
+    opacity: 0.9;
+    height: 100%;
+    -webkit-transition: left  0.5s ease;
+    transition: left  0.5s ease;
+  }
+  nav ul {
+    line-height: 70px;
+    text-align: center;
+  }
+  nav ul li {
+    display: block;
+  }
+  nav ul li + li {
+    margin-left: 0;
+  }
+  nav ul a {
+    font-size: 16px;
+  }
+  .cmn-toggle-switch {
+    background: transparent;
+    position: fixed;
+    left: 20px;
+    top: 18px;
+    display: block;
+    z-index: 9999999;
+  }
+  nav.active {
+    left: -15px;
+  }
+  .description_site {
+    margin-top: 125px;
+  }
+  .description_site h1 {
+    display: none;
+  }
+  .description_site h2 {
+    font-size: 20px;
+    line-height: 32px;
+    margin-top: 80px;
+  }
+  .description_site h2:after {
+    top: 17px;
+  }
+  .description_site p {
+    display: none;
+  }
+  .form_top {
+    margin-top: 55px;
+  }
+  .tabs_effect h3 {
+    margin-top: 40px;
+  }
+  .tabs_effect img {
+    margin: 50px auto 0;
+    display: block;
+  }
+  .tab-container li {
+    display: inline-block;
+  }
+  .tab-container a {
+    margin-top: 0;
+    margin-right: 2px;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+  }
+  .sub_list_section img {
+    margin: 0 auto;
+    display: block;
+  }
+  .sub_list_section_text {
+    margin-top: 15px;
+  }
+  .picture_section img {
+    float: none;
+    margin: 20px auto 0;
+    display: block;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .custom_section {
+    background-image: none;
+    padding-bottom: 30px;
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .description_site {
+    margin-top: 100px;
+  }
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  .form_top {
+    margin-top: 35px;
+  }
+  .form_top h3 {
+    font-size: 18px;
+  }
+}
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
